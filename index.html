@@ -8,47 +8,68 @@
     <title>Portfolio</title>
 </head>
 <body>
+    
     <!--header-->
     <header>
-        <h1>Title-Portfolio</h1>
+        
+        <nav>
+            <h1>Title-Portfolio</h1>
+            <button class="navbtn" id="Button1">About</button>
+            <button class="navbtn" id="Button2">Project</button>
+            <button class="navbtn" id="Button3">Contact</button>
+        </nav>
     </header>
+
     <!--main-->
     <main>
+
         <!--Introduction-->
         <section class="Introduction">
-            <Nav id="Text1"></Nav>
-            <img src="" alt="">
+            <div id="Text1"><p>Mitt navn er Toshifumi Kamino. Jeg har både norske og japanske røtter. Jeg har gått på fagskole i Japan hvor jeg studerte fiolin-produksjon og reparasjon. Ferdiheter som å lage og reparere fiolin, bratsj og cello fikk jeg gjennom studiet. Etter utdanning, flyttet jeg til Norge og gikk på Folkehøyskole og studerte jakt og fiske. Videoredigering og webdesign er to områder som jeg er svært interessert i.Ved bruk av Wordpress har jeg skrevet en personlig blogg. Dette er noe jeg trives godt med å gjøre,og jeg har stor interesse for IT-reletart arbeid generelt. På bloggen legger jeg blant annet ut bilder og videoer,som jeg redigerer, og jeg har stor motivasjon for å utvikle meg og lære mer om disse fagfeltene. Jeg har benyttet Cyberlink som redigeringsprogramvare.</p></div>
+            <div class="image_circle"></div>
         </section>
+
         <!--About Me-->
         <section class="AboutMe">
-            <nav id="AboutMeText">
+            <div id="AboutMeText">
                 <h2>About Me</h2>
-                <p>Text here</p>
-            </nav>
+                <p>Mitt navn er Toshifumi Kamino. Jeg har både norske og japanske røtter. Jeg har gått på fagskole i Japan hvor jeg studerte fiolin-produksjon og reparasjon. Ferdiheter som å lage og reparere fiolin, bratsj og cello fikk jeg gjennom studiet. Etter utdanning, flyttet jeg til Norge og gikk på Folkehøyskole og studerte jakt og fiske. Videoredigering og webdesign er to områder som jeg er svært interessert i.Ved bruk av Wordpress har jeg skrevet en personlig blogg. Dette er noe jeg trives godt med å gjøre,og jeg har stor interesse for IT-reletart arbeid generelt. På bloggen legger jeg blant annet ut bilder og videoer,som jeg redigerer, og jeg har stor motivasjon for å utvikle meg og lære mer om disse fagfeltene. Jeg har benyttet Cyberlink som redigeringsprogramvare.</p>
+            </div>
         </section>
-        <!--Project-->
+
+        <!--Project--> 
+        
         <section class="ProjectContainer">
-            <nav class="Project" id="item1"></nav>
-            <nav class="Project" id="item2"></nav>
-            <nav class="Project" id="item3"></nav>
-            <nav class="Project" id="item4"></nav>
-            <nav class="Project" id="item5"></nav>
-            <nav class="Project" id="item6"></nav>
+
+            <h3>Projects</h3>
+            <div class="Project">
+                <div id="item1"><a href="https://toshifumidt.github.io/JavascriptWebsite/"><img src="./images/selfsite.png" alt="SelfSite"></a><p>Selfsite</p></div>
+                <div id="item2"><a href="https://toshifumidt.github.io/space/pages/venus.html"><img src="./images/venus.png" alt="SpaceSite"></a><p>Space site</p></div>
+                <div id="item3"><a href="https://toshifumidt.github.io/oppgave/pages/history.html"><img src="./images/historyofviolin.png" alt="ViolinSite"></a><p>History of Violin</p></div>
+                <div id="item4"><a href="https://toshifumidt.github.io/gridsite/"><img src="./images/gridsite.png" alt="GridSite"></a><p>Grid site</p></div>
+            </div>
+
+            <div id="Github"><a href="https://github.com/ToshifumiDT"><img src="./images/icons8-github-100.png" alt="Githublink"><p>Check github page.</p></a></div>
+            
+            <h3>Tools</h3>
+            
+            <div id="Tools">
+                <img src="./images/icons8-html-64.png" alt="HTML" id="html">
+                <img src="./images/icons8-css-64.png" alt="CSS" id="css">
+                <img src="./images/icons8-javascript-64.png" alt="JavaScript" id="javascript">
+            </div>
+
         </section>
+
         <!--Tools & Contact Form-->
         <section class="ContactForm">
-            <nav id="Tools">
-                <p id="HTML">HTML</p>
-                <p id="CSS">CSS</p>
-                <p id="JavaScript">JavaScript</p>
-            </nav>
-            <nav id="ContactForm"></nav>
+            <div id="ContactForm"></div>
         </section>
     </main>
     
     <aside></aside>
     <!--footer-->
     <footer></footer>
-    
+    <script src="./JavaScript/index.js"></script>
 </body>
 </html>
