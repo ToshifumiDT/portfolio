@@ -12,6 +12,9 @@ body {
     background: radial-gradient(rgb(81, 89, 95), rgb(1, 54, 107));
 }
 
+/*for desktop*/
+@media (min-width: 1000px) {
+
 /*Button*/
 .navbtn {
     border-radius: 20px;
@@ -284,4 +287,292 @@ form button:hover {
 footer {
     background-color: rgba(0, 0, 0, 0.699);
     height: 100px;
+}
+}
+
+/*for mobile*/
+@media (max-width: 999px) {
+
+/*Button*/
+.navbtn {
+    border-radius: 20px;
+    font-size: 16px;
+    height: 30px;
+    width: 150px;
+    color: #333;
+    margin: 8px 10px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #0ef;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.navbtn:hover {
+    box-shadow: none;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+h1 {
+    font-size: 30px;
+    color: #ededed;
+}
+
+nav {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*introduction*/
+
+.Introduction {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#Text1 {
+    margin: 20px 10px;
+    font-size: 36px; 
+    text-align: left;
+    color: #ededed;
+}
+
+div.image_circle {
+    height: 400px;
+    width: 400px;
+    border-radius:50%;
+    background-image: url("../images/IMG_4899_0.jpg");
+    background-position: 50% 50%;
+    background-size: 150%;
+}
+
+/*About Me*/
+.AboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#AboutMeText{
+    width: 1000px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ededed;
+}
+
+#Text2 {
+ font-size: 20px;
+ text-align: left;
+ color: #ededed;
+}
+
+
+/*Tools*/
+
+h3{
+    font-size: 36px;
+    text-align: center;
+    color: #ededed;
+}
+
+#Tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Project*/
+
+.ProjectContainer p {
+    font-size: 26px;
+}
+
+.Project {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin: 0 15%;
+    height: 1000px;
+    color: #ededed;
+}
+
+
+#item1 img {
+    width: 300px;
+    border: 3px solid #33333386;
+    margin: 30px 0;
+}
+
+#item1 img:hover{
+    box-shadow: 0 0 10px #333333e1;
+}
+
+#item2 img {
+    width: 300px;
+    border: 3px solid #33333386;
+    margin: 30px 0;
+}
+
+#item2 img:hover{
+    box-shadow: 0 0 10px #333333e1;
+}
+
+#item3 img {
+    width: 300px;
+    border: 3px solid #33333386;
+    margin: 30px 0;
+}
+
+#item3 img:hover{
+    box-shadow: 0 0 10px #333333e1;
+}
+
+#item4 img {
+    width: 300px;
+    border: 3px solid #33333386;
+    margin: 30px 0;
+}
+
+#Tools {
+    margin-top: 250px;
+}
+
+#item4 img:hover{
+    box-shadow: 0 0 10px #333333e1;
+}
+
+#Github {
+    text-align: center;
+}
+
+#html{
+    margin: 0 15px;
+}
+
+#css{
+    margin: 0 15px;
+}
+
+#javascript{
+    margin: 0 15px;
+}
+
+/*contact form*/
+
+.ContactForm {
+    display: block;
+    background-color: rgba(59, 59, 59, 0.459);
+    text-align: center;
+    margin-top: 700px;
+    height: 1000px;
+}
+
+.ContactForm h3 {
+    font-size: 40px;
+    color: #ededed;
+    margin-bottom: 20px;
+}
+
+.ContactForm form {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form .input_box {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.input_box .input-field {
+    width: 90%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: rgba(225, 225, 225, .3);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    width: 90%;
+    display: grid;
+    text-align: left;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
+/*footer*/
+
+footer {
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 100px;
+}
 }
