@@ -25,7 +25,7 @@
 
         <!--Introduction-->
         <section class="Introduction">
-            <div id="Text1"><p>Mitt navn er Toshifumi Kamino. Jeg har både norske og japanske røtter. Jeg har gått på fagskole i Japan hvor jeg studerte fiolin-produksjon og reparasjon. Ferdiheter som å lage og reparere fiolin, bratsj og cello fikk jeg gjennom studiet. Etter utdanning, flyttet jeg til Norge og gikk på Folkehøyskole og studerte jakt og fiske. Videoredigering og webdesign er to områder som jeg er svært interessert i.Ved bruk av Wordpress har jeg skrevet en personlig blogg. Dette er noe jeg trives godt med å gjøre,og jeg har stor interesse for IT-reletart arbeid generelt. På bloggen legger jeg blant annet ut bilder og videoer,som jeg redigerer, og jeg har stor motivasjon for å utvikle meg og lære mer om disse fagfeltene. Jeg har benyttet Cyberlink som redigeringsprogramvare.</p></div>
+            <div id="Text1"><b>Hello!<br>I'm Toshifumi and I'm interested in Web development and video editing.</b></div>
             <div class="image_circle"></div>
         </section>
 
@@ -33,7 +33,7 @@
         <section class="AboutMe">
             <div id="AboutMeText">
                 <h2>About Me</h2>
-                <p>Mitt navn er Toshifumi Kamino. Jeg har både norske og japanske røtter. Jeg har gått på fagskole i Japan hvor jeg studerte fiolin-produksjon og reparasjon. Ferdiheter som å lage og reparere fiolin, bratsj og cello fikk jeg gjennom studiet. Etter utdanning, flyttet jeg til Norge og gikk på Folkehøyskole og studerte jakt og fiske. Videoredigering og webdesign er to områder som jeg er svært interessert i.Ved bruk av Wordpress har jeg skrevet en personlig blogg. Dette er noe jeg trives godt med å gjøre,og jeg har stor interesse for IT-reletart arbeid generelt. På bloggen legger jeg blant annet ut bilder og videoer,som jeg redigerer, og jeg har stor motivasjon for å utvikle meg og lære mer om disse fagfeltene. Jeg har benyttet Cyberlink som redigeringsprogramvare.</p>
+                <p id="Text2">My name is Toshifumi Kamino. I have both Norwegian and Japanese roots. I went to a vocational school in Japan where I studied violin making and repair. Skills such as making and repairing violin, viola and cello were acquired through my studies. <br><br>After graduation, I moved to Norway and went to Folkehøyskole and studied hunting and fishing. Video editing and web design are two areas that I am very interested in. <br>Using Wordpress, I have written a personal blog. This is something I enjoy doing, and I have a great interest in IT-related work in general. On the blog I post pictures and videos, which I edit, and I have great motivation to develop and learn more about these fields. I have used Cyberlink as editing software.</p>
             </div>
         </section>
 
@@ -48,28 +48,59 @@
                 <div id="item3"><a href="https://toshifumidt.github.io/oppgave/pages/history.html"><img src="./images/historyofviolin.png" alt="ViolinSite"></a><p>History of Violin</p></div>
                 <div id="item4"><a href="https://toshifumidt.github.io/gridsite/"><img src="./images/gridsite.png" alt="GridSite"></a><p>Grid site</p></div>
             </div>
+                        
+            <div id="Tools">
+                <img src="./images/icons8-html-96.png" alt="HTML" id="html">
+                <img src="./images/icons8-css-96.png" alt="CSS" id="css">
+                <img src="./images/icons8-javascript-96.png" alt="JavaScript" id="javascript">
+            </div>
 
             <div id="Github"><a href="https://github.com/ToshifumiDT"><img src="./images/icons8-github-100.png" alt="Githublink"><p>Check github page.</p></a></div>
-            
-            <h3>Tools</h3>
-            
-            <div id="Tools">
-                <img src="./images/icons8-html-64.png" alt="HTML" id="html">
-                <img src="./images/icons8-css-64.png" alt="CSS" id="css">
-                <img src="./images/icons8-javascript-64.png" alt="JavaScript" id="javascript">
-            </div>
 
         </section>
 
         <!--Tools & Contact Form-->
         <section class="ContactForm">
-            <div id="ContactForm"></div>
+
+            <h3>Contact me!</h3>
+
+            <form action="#">
+                <div class="input_box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                        <div class="error-txt">Full Name can't be blank</div>
+                    </div>
+                    <div class="input-field field">   
+                        <input type="text" placeholder="E-mail Address" id="email" class="item" autocomplete="off">
+                        <div class="error-txt email">E-mail Address can't be blank</div>
+                    </div> 
+                </div>
+                <div class="input_box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                        <div class="error-txt">Phone Number can't be blank</div>
+                    </div>
+                    <div class="input-field field"> 
+                        <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                        <div class="error-txt">Subject can't be blank</div>
+                    </div>
+                </div>
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">Message can't be blank</div>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+            
         </section>
     </main>
     
     <aside></aside>
     <!--footer-->
     <footer></footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./JavaScript/index.js"></script>
 </body>
 </html>

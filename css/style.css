@@ -8,32 +8,38 @@ section {
     padding: 20px;
 }
 
+body {
+    background: radial-gradient(rgb(81, 89, 95), rgb(1, 54, 107));
+}
 
 /*Button*/
 .navbtn {
-    box-shadow: 6px 6px 5px #000000a6;
-    border: 2px solid rgb(65, 60, 44);
     border-radius: 20px;
-    background-color: rgba(255, 237, 187, 0.651);
     font-size: 20px;
     height: 40px;
     width: 100px;
-    color: hsl(0, 0%, 0%);
-    cursor: pointer;
+    color: #333;
     margin: 30px 10px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #0ef;
+    transition: .5s;
+    cursor: pointer;
 }
 
-.navbtn:active {
-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.700);
+.navbtn:hover {
+    box-shadow: none;
 }
 
 header {
-    height: 130px;
-    background-color: aqua;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.308);
 }
 
 h1 {
     font-size: 50px;
+    color: #ededed;
 }
 
 nav {
@@ -48,7 +54,6 @@ nav {
 /*introduction*/
 
 .Introduction {
-    background-color: rgb(0, 104, 31);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +62,9 @@ nav {
 
 #Text1 {
     width: 600px;
-    font-size: 16px;
-    
+    font-size: 36px; 
+    text-align: left;
+    color: #ededed;
 }
 
 div.image_circle {
@@ -72,7 +78,6 @@ div.image_circle {
 
 /*About Me*/
 .AboutMe {
-    background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,18 +90,26 @@ div.image_circle {
 
 h2 {
     font-size: 36px;
+    margin-bottom: 30px;
+    color: #ededed;
+}
+
+#Text2 {
+ font-size: 20px;
+ text-align: left;
+ color: #ededed;
 }
 
 
 /*Tools*/
 
 h3{
-    font-size: 26px;
+    font-size: 36px;
     text-align: center;
+    color: #ededed;
 }
 
 #Tools {
-    background-color: rgb(238, 255, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,38 +118,58 @@ h3{
 
 /*Project*/
 
-.ProjectContainer {
-    
+.ProjectContainer p {
+    font-size: 26px;
 }
 
 .Project {
-    background-color: rgb(255, 148, 17);
     display: grid;
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin: 0 15%;
+    color: #ededed;
 }
 
 
 #item1 img {
     width: 300px;
+    border: 3px solid #33333386;
     margin: 30px 0;
+}
+
+#item1 img:hover{
+    box-shadow: 0 0 10px #333333e1;
 }
 
 #item2 img {
     width: 300px;
+    border: 3px solid #33333386;
     margin: 30px 0;
+}
+
+#item2 img:hover{
+    box-shadow: 0 0 10px #333333e1;
 }
 
 #item3 img {
     width: 300px;
+    border: 3px solid #33333386;
     margin: 30px 0;
+}
+
+#item3 img:hover{
+    box-shadow: 0 0 10px #333333e1;
 }
 
 #item4 img {
     width: 300px;
+    border: 3px solid #33333386;
     margin: 30px 0;
+}
+
+#item4 img:hover{
+    box-shadow: 0 0 10px #333333e1;
 }
 
 #Github {
@@ -155,9 +188,100 @@ h3{
     margin: 0 15px;
 }
 
+/*contact form*/
+
+.ContactForm {
+    display: block;
+    background-color: rgba(59, 59, 59, 0.459);
+    text-align: center;
+    padding-top: 9%;
+    height: 70vh;
+}
+
+.ContactForm h3 {
+    font-size: 40px;
+    color: #ededed;
+    margin-bottom: 20px;
+}
+
+.ContactForm form {
+    width: 600px;
+    margin: 0 auto; /* 追加: フォームを中央に配置 */
+    text-align: center;
+}
+
+form .input_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_box .input-field {
+    width: 45%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: rgba(225, 225, 225, .3);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
 /*footer*/
 
 footer {
-    background-color: rgb(255, 72, 72);
+    background-color: rgba(0, 0, 0, 0.699);
     height: 100px;
 }
