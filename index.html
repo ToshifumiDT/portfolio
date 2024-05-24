@@ -13,13 +13,41 @@
     <!--header-->
     <header>
         
-        <nav>
+        <nav class="navdesktop">
             <h1>Toshifumi-Portfolio</h1>
             <button class="navbtn" id="Button1">About</button>
             <button class="navbtn" id="Button2">Project</button>
             <button class="navbtn" id="Button3">Contact</button>
         </nav>
+    
+
+        <div id="navArea">
+            <h1>Toshifumi-Portfolio</h1>
+            <nav class="navmobile">
+                
+                <div class="inner">
+                    <ul>
+                        <li><button class="navbtn2" id="Button4">About</button></li>
+                        <li><button class="navbtn2" id="Button5">Project</button></li>
+                        <li><button class="navbtn2" id="Button6">Contact</button></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="mask"></div>
+        </div>
     </header>
+
+
+
+
+
 
     <!--main-->
     <main>
@@ -103,5 +131,6 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./JavaScript/index.js"></script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 </html>
