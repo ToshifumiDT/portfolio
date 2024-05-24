@@ -549,7 +549,7 @@ h3{
 }
 
 .ProjectContainer {
-    margin-bottom: 300px;
+    margin-bottom: 30px;
 }
 
 .Project {
@@ -558,7 +558,7 @@ h3{
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     margin: 0 15% 20px 15%;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     color: #ededed;
 }
 
@@ -600,7 +600,7 @@ h3{
 }
 
 #Tools {
-    margin-top: 250px;
+    margin-top: 10px;
 }
 
 #item4 img:hover{
