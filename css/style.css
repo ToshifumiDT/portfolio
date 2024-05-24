@@ -196,6 +196,7 @@ h3{
 }
 
 #Github {
+    display: block;
     text-align: center;
 }
 
@@ -549,6 +550,7 @@ h3{
 }
 
 .ProjectContainer {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
