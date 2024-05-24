@@ -548,13 +548,17 @@ h3{
     font-size: 16px;
 }
 
+.ProjectContainer {
+    margin-bottom: 300px;
+}
+
 .Project {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     margin: 0 15% 20px 15%;
-    padding-bottom: 130px;
+    padding-bottom: 100px;
     color: #ededed;
 }
 
@@ -627,7 +631,8 @@ h3{
     display: block;
     background-color: rgba(59, 59, 59, 0.459);
     text-align: center;
-    height: 600px;
+    padding-top: 30px;
+    height: 900px;
 }
 
 .ContactForm h3 {
