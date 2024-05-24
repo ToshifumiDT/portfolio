@@ -3,17 +3,19 @@
     margin:0%
 }
 
-section {
-    height: 100vh;
-    padding: 20px;
-}
 
 body {
     background: radial-gradient(rgb(0, 44, 88), rgb(74, 86, 95));
 }
 
+
 /*--------------for desktop--------------*/
 @media (min-width: 1000px) {
+    
+section {
+    height: 100vh;
+    padding: 20px;
+}
 
 /*Button*/
 .navbtn {
@@ -130,8 +132,16 @@ h3{
 
 /*Project*/
 
-.ProjectContainer p {
-    font-size: 26px;
+#text4 {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+#text3 {
+    display: block;
+    text-align: center;
+    font-size: 16px;
 }
 
 .Project {
@@ -139,7 +149,8 @@ h3{
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin: 0 20%;
+    margin: 0 15% 20px 15%;
+    padding-bottom: 20px;
     color: #ededed;
 }
 
@@ -468,12 +479,13 @@ header {
 
 #Text1 {
     margin: 20px 10px;
-    font-size: 36px; 
+    font-size: 30px; 
     text-align: left;
     color: #ededed;
 }
 
 div.image_circle {
+    margin: auto;
     height: 400px;
     width: 400px;
     border-radius:50%;
@@ -524,8 +536,16 @@ h3{
 
 /*Project*/
 
-.ProjectContainer p {
-    font-size: 26px;
+#text4 {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+#text3 {
+    display: block;
+    text-align: center;
+    font-size: 16px;
 }
 
 .Project {
@@ -533,8 +553,8 @@ h3{
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
-    margin: 0 15%;
-    height: 1000px;
+    margin: 0 15% 20px 15%;
+    padding-bottom: 130px;
     color: #ededed;
 }
 
@@ -584,6 +604,8 @@ h3{
 }
 
 #Github {
+    display: block;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -605,8 +627,7 @@ h3{
     display: block;
     background-color: rgba(59, 59, 59, 0.459);
     text-align: center;
-    margin-top: 700px;
-    height: 1000px;
+    height: 600px;
 }
 
 .ContactForm h3 {
