@@ -30,11 +30,16 @@ section {
     color: #333;
     margin: 30px 10px;
     background: #0ef;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 10px #0ef;
-    transition: .5s;
+    border: 1px solid rgba(0, 0, 0, 0.5) !important; 
+    outline: 1px solid rgba(0, 0, 0, 0.5) !important; 
+    box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.658) !important;
+    transition: .2s;
     cursor: pointer;
+}
+
+.navbtn:active {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.658) !important;
+    transform: translateY(4px);
 }
 
 #navArea h1 {
@@ -76,6 +81,8 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 100px;
+    height: 500px;
 }
 
 #Text1 {
@@ -100,6 +107,7 @@ div.image_circle {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 100px;
     height: 400px;
 }
 
