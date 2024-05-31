@@ -129,7 +129,7 @@ div.image_circle {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 140px;
     height: 400px;
 }
 
@@ -253,7 +253,8 @@ h3{
     display: block;
     background-color: rgba(59, 59, 59, 0.459);
     text-align: center;
-    padding-top: 9%;
+    padding-top: 10px;
+    margin-top: 100px;
     height: 70vh;
 }
 
@@ -536,6 +537,7 @@ div.image_circle {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 30px 30px;
 }
 
 #AboutMeText{
@@ -668,7 +670,8 @@ h3{
     display: block;
     background-color: rgba(59, 59, 59, 0.459);
     text-align: center;
-    padding-top: 30px;
+    margin-top: 60px;
+    padding-top: 30px !important;
     height: 900px;
 }
 
