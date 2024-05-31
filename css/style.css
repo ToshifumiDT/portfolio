@@ -9,8 +9,29 @@
 body {
     background: radial-gradient(rgb(0, 44, 88), rgb(74, 86, 95));
     font-family: "Dosis", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
+}
+
+/*Link color and underline*/
+
+a:link {
+    color: #ededed; 
+    text-decoration: underline; 
+}
+
+a:visited {
+    color: #ededed; 
+    text-decoration: underline; 
+}
+
+a:hover {
+    color: #008cff; 
+    text-decoration: underline; 
+}
+
+a:active {
+    color: #008cff; 
+    text-decoration: underline; 
 }
 
 
@@ -56,7 +77,7 @@ header {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 50px !important;
     margin-right: 100px;
     color: #ededed;
 }
@@ -87,7 +108,8 @@ h1 {
 
 #Text1 {
     width: 600px;
-    font-size: 36px; 
+    font-size: 46px !important;
+    margin-right: 30px;
     text-align: left;
     color: #ededed;
 }
@@ -116,13 +138,13 @@ div.image_circle {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 46px !important;
     margin-bottom: 30px;
     color: #ededed;
 }
 
 #Text2 {
- font-size: 20px;
+ font-size: 26px !important;
  text-align: left;
  color: #ededed;
 }
@@ -131,7 +153,7 @@ h2 {
 /*Tools*/
 
 h3{
-    font-size: 36px;
+    font-size: 46px !important;
     text-align: center;
     color: #ededed;
 }
